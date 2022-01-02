@@ -3,8 +3,8 @@ const droppableElements = document.querySelectorAll(".droppable");
 
 draggableElements.forEach(elem =>{
   elem.addEventListener("dragstart", dragStart);
-  // elem.addEventListener("drag", drag);
-  // elem.addEventListener("dragend", dragEnd);
+   // elem.addEventListener("drag", drag);
+   // elem.addEventListener("dragend", dragEnd);
 })
 droppableElements.forEach(elem =>{
   elem.addEventListener("dragenter", dragEnter);
@@ -56,7 +56,7 @@ function drop(event){
     event.target.classList.add("dropped");
     let draggableElement = document.getElementById(draggableElementData);
     event.target.style.backgroundColor = draggableElement.style.color;
-    // event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
+    event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
     draggableElement.classList.add("dragged");
     draggableElement.setAttribute("draggable", "false");
     event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`)
