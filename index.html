@@ -6,10 +6,9 @@
   <title>Drag&Drop</title>
   <meta name="description" content="Drag&Drop">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="drag&drop">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <script src="./js/main.js"></script>
+
 </head>
 
 <body>
@@ -17,12 +16,12 @@
 <h1>Little HTML CSS & JS GAME with DRAG&DROP</h1>
 <p>drag the icon and drop it to the right value</p>
 <section class="draggable-elements">
-  <i class="fas fa-cat draggable" style="color: #ff6384;" id="cat"></i>
-  <i class="fas fa-dog draggable" style="color: #36a2eb;" id="dog"></i>
-  <i class="fas fa-horse draggable" style="color: #ffce56;" id="horse"></i>
-  <i class="fas fa-fish draggable" style="color: #9966ff;" id="fish"></i>
-  <i class="fas fa-frog draggable" style="color: #4bc0c0;" id="frog"></i>
-  <i class="fas fa-spider draggable" style="color: #0e64a2;" id="spider"></i>
+  <i class="fas fa-cat draggable" draggable="true" style="color: #ff6384;" id="cat"></i>
+  <i class="fas fa-dog draggable" draggable="true" style="color: #36a2eb;" id="dog"></i>
+  <i class="fas fa-horse draggable" draggable="true" style="color: #ffce56;" id="horse"></i>
+  <i class="fas fa-fish draggable" draggable="true" style="color: #9966ff;" id="fish"></i>
+  <i class="fas fa-frog draggable" draggable="true" style="color: #4bc0c0;" id="frog"></i>
+  <i class="fas fa-spider draggable" draggable="true"style="color: #0e64a2;" id="spider"></i>
 </section>
 <section class="droppable-elements">
 <div class="droppable" data-draggable-id="frog"><span>Frog</span></div>
@@ -35,18 +34,18 @@
 </section>
 <hr>
 <section class="draggable-elements">
-  <i class="fas fa-bus draggable" style="color: #ff6384;" id="bus"></i>
-  <i class="fas fa-bicycle draggable" style="color: #36a2eb;" id="bike"></i>
-  <i class="fas fa-truck draggable" style="color: #ffce56;" id="truck"></i>
-  <i class="fas fa-car draggable" style="color: #9966ff;" id="car"></i>
-  <i class="fas fa-motorcycle draggable" style="color: #4bc0c0;" id="motorcycle"></i>
-  <i class="fas fa-helicopter draggable" style="color: #0e64a2;" id="helicopter"></i>
+  <i class="fas fa-bus draggable" draggable="true" style="color: #ff6384;" id="bus"></i>
+  <i class="fas fa-bicycle draggable" draggable="true" style="color: #36a2eb;" id="bike"></i>
+  <i class="fas fa-truck draggable" draggable="true" style="color: #ffce56;" id="truck"></i>
+  <i class="fas fa-car draggable" draggable="true" style="color: #9966ff;" id="car"></i>
+  <i class="fas fa-motorcycle draggable" draggable="true" style="color: #4bc0c0;" id="motorcycle"></i>
+  <i class="fas fa-helicopter draggable" draggable="true" style="color: #0e64a2;" id="helicopter"></i>
 </section>
 
 <section class="droppable-elements">
   <div class="droppable" data-draggable-id="bike"><span>Bike</span></div>
   <div class="droppable" data-draggable-id="car"><span>Car</span></div>
-  <div class="droppable" data-draggable-id="bus"><span>Spider</span></div>
+  <div class="droppable" data-draggable-id="bus"><span>Bus</span></div>
   <div class="droppable" data-draggable-id="helicopter"><span>Heli</span></div>
   <div class="droppable" data-draggable-id="truck"><span>Truck</span></div>
   <div class="droppable" data-draggable-id="motorcycle"><span>Moped</span>
@@ -55,12 +54,12 @@
 
 <hr>
 <section class="draggable-elements">
-  <i class="fas fa-biking draggable" style="color: #ff6384;" id="biking"></i>
-  <i class="fas fa-skating draggable" style="color: #36a2eb;" id="skating"></i>
-  <i class="fas fa-running draggable" style="color: #ffce56;" id="running"></i>
-  <i class="fas fa-swimmer draggable" style="color: #9966ff;" id="swimming"></i>
-  <i class="fas fa-skiing draggable" style="color: #4bc0c0;" id="skiing"></i>
-  <i class="fas fa-snowboarding draggable" style="color: #0e64a2;" id="snowboarding"></i>
+  <i class="fas fa-biking draggable" draggable="true" style="color: #ff6384;" id="biking"></i>
+  <i class="fas fa-skating draggable" draggable="true" style="color: #36a2eb;" id="skating"></i>
+  <i class="fas fa-running draggable" draggable="true" style="color: #ffce56;" id="running"></i>
+  <i class="fas fa-swimmer draggable" draggable="true" style="color: #9966ff;" id="swimming"></i>
+  <i class="fas fa-skiing draggable" draggable="true" style="color: #4bc0c0;" id="skiing"></i>
+  <i class="fas fa-snowboarding draggable" draggable="true" style="color: #0e64a2;" id="snowboarding"></i>
 </section>
 
 <section class="droppable-elements">
@@ -72,7 +71,7 @@
   <div class="droppable" data-draggable-id="snowboarding"><span>Snowboard</span>
   </div>
 </section>
-
+<script src="/js/main.js"></script>
 </body>
 
 </html>
