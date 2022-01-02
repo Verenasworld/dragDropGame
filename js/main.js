@@ -21,16 +21,26 @@ function dragStart(event){
 }
 
 function dragEnter(event){
-event.target.classList.add("droppable-hover")
+  if(!event.target.classList.contains("dropped")){
+    event.target.classList.add("droppable-hover")
+  }
+
 
 }
 
 function dragOver(event){
-  event.preventDefault();
+  if(!event.target.classList.contains("dropped")){
+    event.preventDefault();
+  }
+
 }
 
 function dragLeave(event){
-  event.target.classList.remove("droppable-hover")
+
+  if(!event.target.classList.contains("dropped")){
+    event.target.classList.remove("droppable-hover")
+
+  }
 
 }
 
@@ -46,6 +56,7 @@ function drop(event){
     event.target.classList.add("dropped");
     let draggableElement = document.getElementById(draggableElementData);
     event.target.style.backgroundColor = draggableElement.style.color;
+    // event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
     draggableElement.classList.add("dragged");
     draggableElement.setAttribute("draggable", "false");
     event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`)
