@@ -29,6 +29,7 @@ p{
 .draggable-elements{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 2rem;
 }
 
@@ -52,6 +53,7 @@ p{
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .droppable{
   height: 6.5rem;
