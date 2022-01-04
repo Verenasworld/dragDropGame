@@ -108,11 +108,15 @@ p{
   opacity: 0.1;
 }
 
-@media (max-width: 600px) {
+@media (max-width:500px) {
   html{
-    font-size: 14px;
+    font-size: 16px;
   }
   .draggable-elements{
+    margin: 1.5rem;
+  }
+
+  .droppable-elements{
     margin: 1.5rem;
   }
 }
