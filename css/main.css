@@ -106,7 +106,9 @@ p{
 
 .draggable.dragged{
   opacity: 0.1;
+
 }
+
 
 @media (max-width:500px) {
   html{
